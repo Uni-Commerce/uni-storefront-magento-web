@@ -28,19 +28,12 @@ export default function Home() {
         <main className={styles.main}>
           <Image
             className={styles.logo}
-            src="/store/next.svg"
+            src="/store/images/uni-store.png"
             alt="Next.js logo"
-            width={180}
-            height={38}
+            width={300}
+            height={300}
             priority
           />
-          <ol>
-            <li>
-              Get started by editing <code>pages/index.tsx</code>.
-            </li>
-            <li>Save and see your changes instantly.</li>
-          </ol>
-
           <div className={styles.ctas}>
             <a
               className={styles.primary}
