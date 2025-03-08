@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -H 127.0.0.1 -p 3000",
     "lint": "next lint",
     "deploy": "pm2 start pm2.config.js --only uni",
     "stop": "pm2 delete all",
