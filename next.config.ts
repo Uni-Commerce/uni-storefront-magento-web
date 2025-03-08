@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   basePath: "/store",
   images: {
-    unoptimized: false,
+    unoptimized: true,
   },
 };
 
