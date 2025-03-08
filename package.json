@@ -6,12 +6,16 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "pm2 start pm2.config.js --only uni",
+    "stop": "pm2 delete all",
+    "list": "pm2 list"
   },
   "dependencies": {
+    "next": "^15.2.1",
+    "pm2": "^5.4.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "^15.2.1"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.0",
