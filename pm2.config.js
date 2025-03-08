@@ -3,7 +3,7 @@ module.exports = {
     {
       name: "uni",
       exec_mode: "cluster",
-      instances: "max",
+      instances: 1,
       args: "start",
       script: "./node_modules/next/dist/bin/next",
       watch: false,
