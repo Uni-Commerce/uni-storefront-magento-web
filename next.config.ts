@@ -1,9 +1,11 @@
 import type { NextConfig } from "next";
 
+import { nextConf } from "@/config/next.conf";
+
 const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
-  basePath: "/store",
+  basePath: nextConf.basePath,
   images: {
     unoptimized: true,
   },
