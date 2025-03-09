@@ -42,9 +42,9 @@ export const initializeApollo = (initialState = null) => {
     // Merge the initialState from getStaticProps/getServerSideProps in the existing cache
     const data = merge(existingCache, initialState, {
       // combine arrays using object equality (like in sets)
-      arrayMerge: (destinationArray, sourceArray) => [
+      arrayMerge: (destinationArray: any, sourceArray: any) => [
         ...sourceArray,
-        ...destinationArray.filter((d) => sourceArray.every((s) => !isEqual(d, s)))
+        ...destinationArray.filter((d: any) => sourceArray.every((s: any) => !isEqual(d, s)))
       ]
     })
 
@@ -59,7 +59,7 @@ export const initializeApollo = (initialState = null) => {
   return _apolloClient
 }
 
-export const addApolloState = (client, pageProps) => {
+export const addApolloState = (client: any, pageProps: any) => {
   if (pageProps?.props) {
     pageProps.props[APOLLO_STATE_PROP_NAME] = client.cache.extract()
   }
@@ -67,7 +67,7 @@ export const addApolloState = (client, pageProps) => {
   return pageProps
 }
 
-export const useApollo = (pageProps) => {
+export const useApollo = (pageProps: any) => {
   const state = pageProps[APOLLO_STATE_PROP_NAME]
   const store = useMemo(() => initializeApollo(state), [state])
   return store
