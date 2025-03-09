@@ -1,8 +1,8 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import { Html, Head, Main, NextScript } from 'next/document'
 
-import { nextConf } from "@/config/next.conf";
+import { nextConf } from '@/config/next.conf'
 
-export default function Document() {
+const Document = () => {
   return (
     <Html lang="en">
       <Head />
@@ -12,5 +12,7 @@ export default function Document() {
         <script src={`${nextConf.basePath}/js/jquery.min.js`} defer />
       </body>
     </Html>
-  );
+  )
 }
+
+export default Document
