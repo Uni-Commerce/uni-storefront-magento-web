@@ -5,7 +5,7 @@ import { nextConf } from '@/config/next.conf'
 const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
-  basePath: nextConf.basePath,
+  basePath: nextConf.basePath === '/' ? '' : nextConf.basePath,
   images: {
     unoptimized: true
   }
