@@ -1,14 +1,14 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
-import { nextConf } from "@/config/next.conf";
+import { nextConf } from '@/config/next.conf'
 
 const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
   basePath: nextConf.basePath,
   images: {
-    unoptimized: true,
-  },
-};
+    unoptimized: true
+  }
+}
 
-export default nextConfig;
+export default nextConfig

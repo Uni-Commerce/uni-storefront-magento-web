@@ -9,9 +9,14 @@
     "lint": "next lint",
     "deploy": "pm2 start pm2.config.js --only uni",
     "stop": "pm2 delete all",
-    "list": "pm2 list"
+    "list": "pm2 list",
+    "husky": "husky"
   },
   "dependencies": {
+    "@emotion/cache": "^11.14.0",
+    "@emotion/server": "^11.11.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material-nextjs": "^6.4.3",
     "next": "^15.2.1",
     "pm2": "^5.4.3",
     "react": "^19.0.0",
@@ -19,11 +24,17 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.0",
+    "@eslint/js": "^9.22.0",
     "@types/node": "^22.13.9",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "eslint": "^9.22.0",
     "eslint-config-next": "^15.2.1",
-    "typescript": "^5.8.2"
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.0"
   }
 }
